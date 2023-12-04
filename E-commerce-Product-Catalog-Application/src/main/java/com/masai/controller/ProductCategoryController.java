@@ -29,7 +29,7 @@ public class ProductCategoryController {
 		return new ResponseEntity<>(pro,HttpStatus.CREATED);
 	}
 	
-	@GetMapping("Categories/{categoryName}")
+	@GetMapping("Categories/products/{categoryName}")
 	public ResponseEntity<List<Product>> getallproductsofCategory(@PathVariable("categoryName") String categoryName){
        
 		List<Product> pro = productCategoryService.getProductsByCategory(categoryName);

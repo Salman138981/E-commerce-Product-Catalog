@@ -23,7 +23,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public Product addProduct(Product product) {
 		if(product == null) throw new ProductException("Product is null") ; 
-    
+              
     	  
     		return productRepository.save(product) ;
 	}
@@ -37,7 +37,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<Product> getAllProduct() {
 		 
-		Pageable pageable = PageRequest.of(0, 10, Sort.by("name").ascending());
+		Pageable pageable = PageRequest.of(0, 10, Sort.by("productName").ascending());
 		
 		List<Product> products = productRepository.findAll(pageable).getContent();
 		

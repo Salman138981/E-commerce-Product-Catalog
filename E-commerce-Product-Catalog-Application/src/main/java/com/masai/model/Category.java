@@ -1,6 +1,9 @@
 package com.masai.model;
 
+import java.util.ArrayList;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -31,9 +34,9 @@ public class Category {
 	    @NotBlank(message = "Description is required")
 	    private String description;
 
-
+	    @JsonIgnore
 	    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL)
-	    private List<Product> products;
+	    private List<Product> products = new ArrayList<>();
 	    
 	    
 	    
