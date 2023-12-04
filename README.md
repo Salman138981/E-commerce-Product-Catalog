@@ -112,5 +112,5 @@ DELETE: http://localhost:8000/categories/5
 POST: http://localhost:8000/Categories/1/products/5
 DELETE: http://localhost:8000/Categories/1/products/5
 GET: http://localhost:8000/Categories/products/Electronics
-
+```
 
