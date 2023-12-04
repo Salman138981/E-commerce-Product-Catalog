@@ -29,13 +29,13 @@ Explore the API endpoints to understand how to interact with the system. The doc
 #### Endpoint
 
 ```http
-GET /api/categories/products{categoryName}
+GET /http://localhost:8000/categories/products{categoryName}
 ```
 
 #### Example
 ##### Request
 ```
-GET /api/categories/products/Electronics
+GET /http://localhost:8000/categories/products/Electronics
 ```
 ##### Response
 ```
@@ -59,13 +59,13 @@ GET /api/categories/products/Electronics
 #### Endpoint
 
 ```http
-POST /api/categories/{categoryId}/products/{productId}
+POST /http://localhost:8000/categories/{categoryId}/products/{productId}
 ```
 
 #### Example
 ##### Request
 ```
-POST /api/categories/1/products/4
+POST /http://localhost:8000/categories/1/products/4
 ```
 ##### Response
 ```
@@ -81,13 +81,13 @@ POST /api/categories/1/products/4
 #### Endpoint
 
 ```http
-DELETE /api/categories/{categoryId}/products/{productId}
+DELETE /http://localhost:8000/categories/{categoryId}/products/{productId}
 ```
 
 #### Example
 ##### Request
 ```
-DELETE /api/categories/2/products/4
+DELETE /http://localhost:8000/categories/2/products/4
 ```
 ##### Response
 ```
@@ -98,6 +98,19 @@ DELETE /api/categories/2/products/4
   "rating": 4
 }
 ```
-## Post collection of links
+## Postman collection of links
 ```
-http://localhost:8000/products
+Post: http://localhost:8000/products
+GET: http://localhost:8000/products
+GET: http://localhost:8000/products/5
+PUT: http://localhost:8000/products/5
+DELETE: http://localhost:8000/products/5
+Post: http://localhost:8000/categories
+GET: http://localhost:8000/Categories
+GET: http://localhost:8000/categories/5
+DELETE: http://localhost:8000/categories/5
+POST: http://localhost:8000/Categories/1/products/5
+DELETE: http://localhost:8000/Categories/1/products/5
+GET: http://localhost:8000/Categories/products/Electronics
+
+
