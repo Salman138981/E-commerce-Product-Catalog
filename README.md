@@ -98,3 +98,6 @@ DELETE /api/categories/2/products/4
   "rating": 4
 }
 ```
+## Post collection of links
+```
+http://localhost:8000/products
